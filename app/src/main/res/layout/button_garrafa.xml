@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ButtonGarrafa">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ButtVoltar"
+        android:layout_width="114dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_button"
+        android:isScrollContainer="false"
+        android:padding="15dp"
+        android:text="voltar"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toStartOf="@+id/buttLocais"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texT2" />
+
+    <ImageView
+        android:id="@+id/imageRecife"
+        android:layout_width="478dp"
+        android:layout_height="267dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/gara" />
+
+    <TextView
+        android:id="@+id/titulo1"
+        android:layout_width="374dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/texto2_sombra"
+        android:text="Reciclagem de Garrafa"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/imageRecife" />
+
+    <TextView
+        android:id="@+id/titulo2"
+        android:layout_width="383dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/texto2_sombra"
+        android:text="Ecoestação"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texT1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttLocais"
+        android:layout_width="115dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_button"
+        android:isScrollContainer="false"
+        android:padding="15dp"
+        android:text="Locais"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttSite"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ButtVoltar"
+        app:layout_constraintTop_toBottomOf="@+id/texT2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttSite"
+        android:layout_width="115dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_button"
+        android:isScrollContainer="false"
+        android:padding="15dp"
+        android:text="Site"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttLocais"
+        app:layout_constraintTop_toBottomOf="@+id/texT2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/texT1"
+        android:layout_width="385dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="10dp"
+        android:text="O PEV-Ponto de Entrega Voluntária- é um equipamento disponibilizado à população em mais de 60 pontos estratégicos na cidade para a disposição de resíduos recicláveis (papel, papelão, metal, latas de alumínio, latas de aço, vidro, PET, embalagens em geral e resíduos eletrônicos com dimensões de até 20 a 30cm ou volume inferior a 5L."
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo1" />
+
+    <TextView
+        android:id="@+id/texT2"
+        android:layout_width="384dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="8dp"
+        android:text="São pontos de recebimento de resíduos, cujo objetivo é oferecer uma alternativa à população para o descarte de móveis velhos, resíduos de pequenas obras residenciais (,1m3), resíduo de poda e outros materiais, com volume de até 1m3/dia."
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo2"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

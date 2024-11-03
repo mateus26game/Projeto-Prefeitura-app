@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".eletronico">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonV"
+        android:layout_width="114dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_button"
+        android:isScrollContainer="false"
+        android:padding="15dp"
+        android:text="voltar"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ButtonL"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttS"
+        android:layout_width="115dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_button"
+        android:isScrollContainer="false"
+        android:padding="15dp"
+        android:text="Site"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ButtonL" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ButtonL"
+        android:layout_width="115dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_button"
+        android:isScrollContainer="false"
+        android:padding="15dp"
+        android:text="Locais"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttS"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonV" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="421dp"
+        android:layout_height="235dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ele" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="343dp"
+        android:layout_height="47dp"
+        android:background="@drawable/texto2_sombra"
+        android:text="O QUE PODE SER DESCARTADO? "
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="393dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="20dp"
+        android:text="Os pontos de entrega voluntaria recebem notebooks, impressoras, eletrônicos de escritório, eletrônicos de pequeno porte, tablets e celulares, acessórios de informática, câmeras, cabos e carregadores, eletroportáteis, ferramentas Elétricas e muitos outros  "
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.023" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

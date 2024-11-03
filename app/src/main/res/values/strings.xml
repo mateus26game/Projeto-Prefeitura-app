@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#154E0A</item>
+        <item name="colorPrimaryDark">@color/minhaCorPersonalizada</item>
+        <item name="colorAccent">#2261FF</item>
+        <item name="android:colorBackground">#F3F0F4</item>
+        <item name="android:statusBarColor">#AC1D56</item> <!-- Adicione esta linha -->
+    </style>
+
+    <string name="app_name">cidade Limpa</string>
+</resources>
